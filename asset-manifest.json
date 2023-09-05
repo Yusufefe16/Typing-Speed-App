@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Typing-Speed-App/static/css/main.960764cb.css",
+    "main.js": "/Typing-Speed-App/static/js/main.88f4f505.js",
+    "static/js/787.7314c409.chunk.js": "/Typing-Speed-App/static/js/787.7314c409.chunk.js",
+    "index.html": "/Typing-Speed-App/index.html",
+    "main.960764cb.css.map": "/Typing-Speed-App/static/css/main.960764cb.css.map",
+    "main.88f4f505.js.map": "/Typing-Speed-App/static/js/main.88f4f505.js.map",
+    "787.7314c409.chunk.js.map": "/Typing-Speed-App/static/js/787.7314c409.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.960764cb.css",
+    "static/js/main.88f4f505.js"
+  ]
+}
