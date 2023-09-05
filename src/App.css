@@ -1,0 +1,279 @@
+*{
+  font-family: 'Inter', sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Mukta', sans-serif;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.correct {
+  font-weight: bold;
+  background-color: #e0ffcd;
+  margin-right: 2px;
+  color: #155263;
+  border-radius: 5px;
+  padding: 0 2px;
+}
+
+.incorrect {
+  font-weight: bold;
+  background-color: #ffcab0;
+  color: #155263;
+  margin-right: 2px;
+  border-radius: 5px;
+  padding: 0 2px;
+}
+
+.active {
+  font-weight: bold;
+}
+
+.App {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.timer{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+  width: 90%;
+  margin: 0 auto;
+  align-items: center;
+}
+
+h1{
+  margin: 5px;
+}
+
+h3{
+  margin: 0;
+}
+
+.time{
+  justify-self: center;
+  background-color: #ffe9e3;
+  border: 5px solid #c4c1e0;
+  border-radius: 8px;
+  align-items: center;
+}
+
+.language{
+  place-self: center;
+  font-size: 30px;
+  font-weight: bold;
+  border: 5px solid #c4c1e0;
+  border-radius: 8px;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.result{
+  justify-self: center;
+  background-color: #ffe9e3;
+  border: 5px solid #c4c1e0;
+  border-radius: 8px;
+}
+
+.words{
+  width: 90%;
+  padding: 10px 0;
+  margin: 20px auto;
+  border: 5px solid #c4c1e0;
+  border-radius: 8px;
+  background-color: #ffe9e3;
+}
+
+.resultCard{
+  border: 1px solid #155263;
+  width: 240px;
+  margin: 20px auto;
+  background-color: #edf2f7ff;
+  border-radius: 8px;
+}
+
+.left{
+  float: left;
+  margin-left: 7px;
+}
+
+.right{
+  float: right;
+  margin-right: 7px;
+}
+
+.cardDetails::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.cardDetails{
+  margin: 5px 0;
+}
+
+.title {
+  background-color: #2563ebff;
+  border-top-left-radius:8px;
+  border-top-right-radius: 8px;
+  padding-top: 8px;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.resultTitle{
+  color: #276749ff;
+  margin: 0;
+}
+
+.WPM{
+  color: #808080;
+  font-size: 10px;
+  margin-bottom: 12px;
+}
+
+.hr{
+  margin: 0;
+  border-width: 2px;
+  border: none;
+  border-top: 2px solid rgb(192, 210, 245);
+  width: 100%;
+}
+
+.correctWord{
+  color: #48bb78ff;
+}
+
+.wrongWord{
+  color: #f56565ff;
+}
+
+.percentage{
+  color: rgb(113, 193, 243);
+}
+
+.inputReset {
+  display: grid;
+  width: 90%;
+  margin: 0 auto;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+}
+
+.inputReset input {
+  width: 100%;
+}
+
+.inputReset button{
+  justify-self: end;
+  border: 5px solid #c4c1e0;
+  border-radius: 8px;
+  background-color: #ffe9e3;
+  cursor: pointer;
+}
+
+.tr{
+  background-color: red;
+  color: #fff;
+}
+
+.en{
+  background-color: blue;
+  color: #fff;
+}
+
+
+.bg-image {
+  background-image: url('https://plus.unsplash.com/premium_photo-1690372794295-d50e392d1de1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+@media (max-width: 450px) {
+  .timer{
+    font-size: 15px;
+  }
+  .language{
+    font-size: 19px;
+  }
+}
+
+@media (max-width: 340px) {
+  .timer{
+    font-size: 12px;
+  }
+  .language{
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 290px) {
+  .timer{
+    font-size: 9px;
+  }
+  .language{
+    font-size: 14px;
+  }
+}
+@media (max-width: 250px) {
+  .timer{
+    font-size: 7px;
+  }
+  .language{
+    font-size: 12px;
+  }
+}
+
+ul.infoli {
+  list-style-type: none; 
+  padding: 0;
+  gap: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ul.infoli li {
+  padding: 10px 20px;
+  background-color: #f6f6f6;
+  border-radius: 5px;
+  display: flex; 
+  align-items: center;
+  gap: 10px;
+}
+
+ul.infoli li a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+}
+
+ul.infoli svg {
+  fill: #333;
+  transition: fill 0.3s ease;
+}
+
+ul.infoli li a:hover svg {
+  fill: #0077b5;
+}
+
+ul.infoli li.li2 a:hover svg {
+  fill: #4078c0;
+}
+
+.footer{
+  margin-top: 15px;
+}
